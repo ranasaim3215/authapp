@@ -9,6 +9,6 @@ class Team(models.Model):
     age = models.IntegerField()
     date = models.DateField()
     salary = models.IntegerField()
-    image = models.ImageField()
+    image = models.ImageField(upload_to='upload/')
     def __str__(self):
         return self.name
